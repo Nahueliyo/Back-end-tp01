@@ -1,3 +1,13 @@
+let libros =[
+    {libro: "El señor de los anillos", autor: "J.R.R Tolkien"},
+    {libro: "It", autor: "Stephen King"},
+    {libro: "Juego de Tronos", autor: "George R.R Martin"}
+]
+
+let libroInfo = libros.map(function(libros)){
+    return `${element.libro} ${element.autor}` 
+}
+
 class Usuario {
     constructor (nombre, apellido, libros, mascotas){
         this.nombre = nombre;
@@ -5,6 +15,9 @@ class Usuario {
         this.libros = libros;
         this.mascotas = mascotas;
     }
+
+
+    
 
     getFullName(){
         return console.log `El nombre del usuario es ${this.name} y su apellido es ${this.apellido}`
@@ -19,21 +32,23 @@ class Usuario {
     }
 
 
-    // agregarLibro(nombreLibro){
-    //     this.libros.push(nombreLibro)
-    // }
+     agregarLibro  (){
+        this.libros.push[{libro: "Harry Potter", autor: "J k Rowling"}]
+     }
+
+     
     // listarLibros(){
     //     return this.libros.map()
     // }
 
-    // agregarMascotas(nombreMascota){
-    //     this.mascotas.push(nombreMascota)
-    // }
+    agregarMascotas(nombreMascota){
+         this.mascotas.push(nombreMascota)
+     }
 
 
 }
+console.log(Usuario)
 
-// let usuario = new Usuario('','','','')
 
 
 
