@@ -4,9 +4,9 @@ let libros =[
     {libro: "Juego de Tronos", autor: "George R.R Martin"}
 ]
 
-let libroInfo = libros.map(function(libros)){
-    return `${element.libro} ${element.autor}` 
-}
+// let libroInfo = libros.map(function(libros)){
+//     return `${this.libro} ${this.autor}`
+// }
 
 class Usuario {
     constructor (nombre, apellido, libros, mascotas){
@@ -28,7 +28,7 @@ class Usuario {
     }
 
     obtenerLibros(){
-        console.log(`Lista de libros: ${this.libros.obtenerLibros}`)
+        return `${this.libro} ${this.autor}`
     }
 
 
@@ -37,10 +37,6 @@ class Usuario {
      }
 
      
-    // listarLibros(){
-    //     return this.libros.map()
-    // }
-
     agregarMascotas(nombreMascota){
          this.mascotas.push(nombreMascota)
      }
